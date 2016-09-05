@@ -39,9 +39,9 @@ func Provider() terraform.ResourceProvider {
 package sky
 
 import (
-        "crypto/sha256"
-        "encoding/hex"
-        "encoding/json"
+  "crypto/sha256"
+  "encoding/hex"
+  "encoding/json"
 	"fmt"
 	"net/http"
 	"io/ioutil"
@@ -65,7 +65,7 @@ func dataSourceHttp() *schema.Resource {
 				Computed:    true,
 				Description: "all payload",
 			},
-      			"latest": &schema.Schema{
+      	"latest": &schema.Schema{
 				Type:        schema.TypeString,
 				Computed:    true,
 				Description: "latest version json value",
